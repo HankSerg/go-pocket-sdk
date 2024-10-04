@@ -9,7 +9,7 @@ package main
 import (
 	"context"
 	"fmt"
-	pocket "github.com/zhashkevych/go-pocket-sdk"
+	pocket "github.com/HankSerg/go-pocket-sdk"
 	"log"
 )
 
@@ -31,7 +31,7 @@ func main()  {
 	}
 
 	err = client.Add(ctx, pocket.AddInput{
-		URL: "https://github.com/zhashkevych/go-pocket-sdk",
+		URL: "https://github.com/HankSerg/go-pocket-sdk",
 		AccessToken: authResp.AccessToken,
 	})
 	if err != nil {
